@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <a href="/new"><button style="margin-left:25px; background-color:lightblue;">Add a post</button></a>
+    <ul>
+    <% for (let i = 0; i < messages.length; i++) { %>
+      <li>
+        <h3> <%= messages[i].user %> </h3>
+        <p>  <%= messages[i].text %> </p>
+        <p>  <%= messages[i].added %> </p>
+      </li>
+   <% } %>
+  </ul> 
+  </body>
+</html>
